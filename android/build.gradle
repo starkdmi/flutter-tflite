@@ -61,8 +61,11 @@ android {
 
 
 dependencies {
-    def tflite_version = "2.11.0"
-    
-    implementation("org.tensorflow:tensorflow-lite:${tflite_version}")
-    implementation("org.tensorflow:tensorflow-lite-gpu:${tflite_version}")
+    // def tflite_version = "2.17.0" // 2.11.0
+    // implementation("org.tensorflow:tensorflow-lite:${tflite_version}")
+    // implementation("org.tensorflow:tensorflow-lite-gpu:${tflite_version}")
+
+    def litert_version = "1.3.0"
+    implementation("com.google.ai.edge.litert:litert:${litert_version}")
+    implementation("com.google.ai.edge.litert:litert-gpu:${litert_version}")
 }
